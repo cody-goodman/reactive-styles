@@ -6,6 +6,12 @@
   "scripts": {
     "test": "jest"
   },
+  "jest":{
+    "coverageDirectory": "__tests__/coverage",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/*"],
+    "testPathIgnorePatterns": ["/node_modules/", "__tests__/coverage/"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goodman-c/reactive-styles.git"
@@ -27,7 +33,6 @@
     "deep-assign": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^23.1.0",
-    "react": "^16.4.0"
+    "jest": "^23.1.0"
   }
 }
