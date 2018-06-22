@@ -1,2 +1,2 @@
 # reactive-styles
-Utils for create a responsive React app with javascript stylesheets
+Utils for creating responsive React apps with JavaScript stylesheets
