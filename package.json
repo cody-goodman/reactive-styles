@@ -1,7 +1,7 @@
 {
   "name": "reactive-styles",
   "version": "0.1.3",
-  "description": "Utils for creating responsive React apps with JavaScript stylesheets",
+  "description": "Utils for creating responsive web apps with JavaScript stylesheets",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -21,7 +21,8 @@
     "responsive",
     "css",
     "javascript",
-    "ui"
+    "ui",
+    "styles"
   ],
   "author": "Cody Goodman",
   "license": "MIT",

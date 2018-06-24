@@ -11,10 +11,13 @@ class StyleSheet {
         let defaultStyles = styles.default;
 
         // Find the first matched device for which there is a defined style
-        let device = media.matches.find(device => {
-            let styleGroup = styles[device.group.name];
-            return styleGroup ? styleGroup[device.name] : false
-        });
+        let device = false;
+        if (media.matches) {
+            device = media.matches.find(device => {
+                let styleGroup = styles[device.group.name];
+                return styleGroup ? styleGroup[device.name] : false
+            });
+        }
 
         if (device) {
             // if a matched devices has defined styles return those styles (combined with any missing defaults)
