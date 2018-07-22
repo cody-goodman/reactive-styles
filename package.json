@@ -1,16 +1,18 @@
 {
   "name": "reactive-styles",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Utils for creating responsive web apps with JavaScript stylesheets",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "jest":{
+  "main": "./dist/index.js",
+  "jest": {
     "coverageDirectory": "__tests__/coverage",
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/*"],
-    "testPathIgnorePatterns": ["/node_modules/", "__tests__/coverage/"]
+    "collectCoverageFrom": [
+      "src/*"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "__tests__/coverage/"
+    ]
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,11 @@
     "ui",
     "styles"
   ],
+  "scripts": {
+    "test": "jest",
+    "prepack": "npm run build",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist"
+  },
   "author": "Cody Goodman",
   "license": "MIT",
   "bugs": {
@@ -34,6 +41,8 @@
     "deep-assign": "^2.0.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-cli": "^6.26.0",
     "jest": "^23.1.0"
   }
 }
