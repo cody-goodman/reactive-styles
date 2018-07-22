@@ -1,6 +1,6 @@
 {
   "name": "reactive-styles",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Utils for creating responsive web apps with JavaScript stylesheets",
   "main": "./dist/index.js",
   "jest": {
